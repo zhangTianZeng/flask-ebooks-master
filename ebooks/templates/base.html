@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0030)http://demo.wpmole.com/digest/ -->
+<html lang="en-US"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>
+
+ {%block title%}{%endblock%}
+</title>
+
+<link rel="stylesheet" href="/static/css/style.css" type="text/css">
+<link rel="pingback" href="http://demo.wpmole.com/digest/xmlrpc.php">
+	<link rel="alternate" type="application/rss+xml" title="Digest » Feed" href="http://demo.wpmole.com/digest/?feed=rss2">
+<link rel="alternate" type="application/rss+xml" title="Digest » Comments Feed" href="http://demo.wpmole.com/digest/?feed=comments-rss2">
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/jquery.masonry.min.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.wpmole.com/digest/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.wpmole.com/digest/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 3.5.2">
+
+<link rel="shortcut icon" href="http://demo.wpmole.com/digest/wp-content/uploads/2013/07/2325.png" type="image/x-icon">
+
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	// grid
+	$('#boxes').masonry({
+		itemSelector: '.box',
+		columnWidth: 210,
+		gutterWidth: 40
+	});
+
+	$('#related').masonry({
+		itemSelector: '.box',
+		columnWidth: 210,
+		gutterWidth: 40
+	});
+
+
+
+});
+</script>
+
+	{%block js%}{%endblock%}
+</head><body class="home blog">
+
+<div id="wrapper">
+<div id="container">
+
+
+<div id="header">
+<div class="top">
+<div id="siteinfo">
+<h1><a href="#">网书</a></h1></div>
+<div class="site-description">总有一本适合你</div>
+
+</div>
+		<div id="header-left"><div class="menu"><ul id="menu-short" class="menu"><li id="menu-item-1629" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1629"><a href="/">言情</a></li>
+<li id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1639"><a href="/dushi/">都市</a></li>
+<li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1639"><a href="/gengmei/">耿美</a></li>
+
+</ul></div></div>
+		<div id="header-center"><div class="menu"><ul id="menu-testing-menu" class="menu"><li id="menu-item-1635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1635"><a href="/chuanyue/">穿越</a></li>
+
+<li id="menu-item-1050" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1051"><a href="/xuanhuan/">玄幻</a></li>
+<li id="menu-item-1051" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1051"><a href="/wangyou/">网游</a></li>
+
+        </ul></div></div>
+			<div id="header-right"><div class="menu"><ul id="menu-all-pages-flat" class="menu"><li id="menu-item-1662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1662"><a href="/wuxia/">武侠</a></li>
+<li id="menu-item-1663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1663"><a href="/lishi/">历史</a></li>
+<li id="menu-item-1664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1664"><a href="/xuanyi/">悬疑</a></li>
+<li id="menu-item-1665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1664"><a href="/tongren/">同人</a></li>
+
+            </ul></div></div>
+
+	<div class="clear"></div>
+</div>
+<hr>
+
+{% block main%}{% endblock %}
+
+	<div id="footer">
+	<hr>
+<div class="fl">
+			<a href="#" title="A Semantic Personal Publishing Platform" rel="generator">张天赠</a>
+			<span class="sep"> | </span>
+			网书<a href="#" rel="designer">:免费下载</a>.</div>
+	</div><!-- #footer -->
+
+</div><!-- .container -->
+</div><!-- .wrapper -->
+
+
+
+
+</body></html>

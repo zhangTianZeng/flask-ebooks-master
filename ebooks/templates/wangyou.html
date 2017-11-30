@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{%block title%}网游{%endblock%}
+{%block js%}
+<script type="text/javascript" src="/static/js/wangyou.js"></script>
+{%endblock%}
+{% block main %}
+	<div id="main">
+		<div class="listmore">
+			<div id="container" role="main">
+
+				<div id="boxes" class="masonry" style="position: relative; height: 1890px;">
+	{% for i in range(0,12)%}
+	<div class="box masonry-brick" style="position: absolute; top: {{listT[i]}}px; left: {{listL[i]}}px;">
+		<div class="rel">
+			<a href="#"><img width="220" height="{{listH[i]}}" src="{{all_books[i].img}}" class="attachment-homepage-thumb wp-post-image" alt="" title=""></a>
+			<h1><a href="#">{{all_books[i].title}}</a></h1>
+			<div class="post-date">{{all_books[i].cate}}</div>
+			<div class="post-date">{{all_books[i].author}}</div>
+			<div class="post-date">{{all_books[i].size}}</div>
+			<div class="post-date">{{all_books[i].date}}</div>
+
+		<p>{{all_books[i].content}}</p>
+<div class="readmore"><a href="{{all_books[i].down}}">立即下载 →</a></div>
+
+		</div>
+	</div>
+{% endfor %}
+
+
+
+
+
+</div>
+
+			</div>
+		</div>
+		{% if has_next %}
+<div class="wrap-pagin">
+	<div class="alignleft" id="loadmore">加载更多</div>
+	<div class="alignright"></div>
+</div>
+{% endif %}
+		<!-- #container -->
+	</div><!-- #main -->
+
+{% endblock %}
